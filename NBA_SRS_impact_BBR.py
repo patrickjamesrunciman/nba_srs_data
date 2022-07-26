@@ -40,12 +40,3 @@ if __name__ == '__main__':
         data_E = pd.concat([data_E, df_E])
 
         column_E_headers
-
-        for year in range(1977, 2022):
-            url = f"https://www.basketball-reference.com/leagues/NBA_{year}_standings.html"
-        page = requests.get(url)
-
-        soup = BeautifulSoup(page.content, "html.parser")
-        mvp_year = soup.find()
-        str((BeautifulSoup(urlopen(url), 'html.parser').findAll('table', id='mvp_NBA')[0]))
-        print()
